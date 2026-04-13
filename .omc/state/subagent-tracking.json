@@ -118,11 +118,47 @@
       "agent_type": "react-dev",
       "started_at": "2026-04-13T17:14:58.779Z",
       "parent_mode": "team",
+      "status": "completed",
+      "completed_at": "2026-04-13T17:29:36.407Z",
+      "duration_ms": 877628
+    },
+    {
+      "agent_id": "acf9a05cb47b48a6e",
+      "agent_type": "react-dev",
+      "started_at": "2026-04-13T17:29:36.619Z",
+      "parent_mode": "team",
+      "status": "completed",
+      "completed_at": "2026-04-13T17:29:52.413Z",
+      "duration_ms": 15794
+    },
+    {
+      "agent_id": "abde0e00dc2111070",
+      "agent_type": "react-dev",
+      "started_at": "2026-04-13T17:29:52.608Z",
+      "parent_mode": "team",
+      "status": "completed",
+      "completed_at": "2026-04-13T17:30:04.919Z",
+      "duration_ms": 12311
+    },
+    {
+      "agent_id": "aeddee9125f6e2a34",
+      "agent_type": "react-dev",
+      "started_at": "2026-04-13T17:30:05.107Z",
+      "parent_mode": "team",
+      "status": "completed",
+      "completed_at": "2026-04-13T17:30:21.517Z",
+      "duration_ms": 16410
+    },
+    {
+      "agent_id": "ac6c38fddc5cad95f",
+      "agent_type": "react-dev",
+      "started_at": "2026-04-13T17:30:21.707Z",
+      "parent_mode": "team",
       "status": "running"
     }
   ],
-  "total_spawned": 13,
-  "total_completed": 11,
+  "total_spawned": 17,
+  "total_completed": 15,
   "total_failed": 0,
-  "last_updated": "2026-04-13T17:14:58.914Z"
+  "last_updated": "2026-04-13T17:30:21.811Z"
 }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-13T17:14:58.779Z",
+  "updatedAt": "2026-04-13T17:30:21.707Z",
   "missions": [
     {
       "id": "session:39696137-b037-4889-a455-feed403390fa:none",
@@ -73,15 +73,15 @@
       "name": "team",
       "objective": "Session mission",
       "createdAt": "2026-04-13T17:06:09.870Z",
-      "updatedAt": "2026-04-13T17:14:58.779Z",
+      "updatedAt": "2026-04-13T17:30:21.707Z",
       "status": "running",
-      "workerCount": 12,
+      "workerCount": 16,
       "taskCounts": {
-        "total": 12,
+        "total": 16,
         "pending": 0,
         "blocked": 0,
         "inProgress": 3,
-        "completed": 9,
+        "completed": 13,
         "failed": 0
       },
       "agents": [
@@ -199,37 +199,77 @@
           "name": "react-dev:aa2cf06",
           "role": "react-dev",
           "ownership": "aa2cf06bca4b3b6b5",
+          "status": "done",
+          "currentStep": null,
+          "latestUpdate": "completed",
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:29:36.407Z"
+        },
+        {
+          "name": "react-dev:acf9a05",
+          "role": "react-dev",
+          "ownership": "acf9a05cb47b48a6e",
+          "status": "done",
+          "currentStep": null,
+          "latestUpdate": "completed",
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:29:52.413Z"
+        },
+        {
+          "name": "react-dev:abde0e0",
+          "role": "react-dev",
+          "ownership": "abde0e00dc2111070",
+          "status": "done",
+          "currentStep": null,
+          "latestUpdate": "completed",
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:30:04.919Z"
+        },
+        {
+          "name": "react-dev:aeddee9",
+          "role": "react-dev",
+          "ownership": "aeddee9125f6e2a34",
+          "status": "done",
+          "currentStep": null,
+          "latestUpdate": "completed",
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:30:21.517Z"
+        },
+        {
+          "name": "react-dev:ac6c38f",
+          "role": "react-dev",
+          "ownership": "ac6c38fddc5cad95f",
           "status": "running",
           "currentStep": null,
           "latestUpdate": null,
           "completedSummary": null,
-          "updatedAt": "2026-04-13T17:14:58.779Z"
+          "updatedAt": "2026-04-13T17:30:21.707Z"
         }
       ],
       "timeline": [
         {
-          "id": "session-start:a25d34693d3b1deb5:2026-04-13T17:13:22.317Z",
-          "at": "2026-04-13T17:13:22.317Z",
+          "id": "session-start:aeddee9125f6e2a34:2026-04-13T17:30:05.107Z",
+          "at": "2026-04-13T17:30:05.107Z",
           "kind": "update",
-          "agent": "backend-dev:a25d346",
-          "detail": "started backend-dev:a25d346",
-          "sourceKey": "session-start:a25d34693d3b1deb5"
+          "agent": "react-dev:aeddee9",
+          "detail": "started react-dev:aeddee9",
+          "sourceKey": "session-start:aeddee9125f6e2a34"
         },
         {
-          "id": "session-start:aa513e2fec069e2bd:2026-04-13T17:13:22.803Z",
-          "at": "2026-04-13T17:13:22.803Z",
-          "kind": "update",
-          "agent": "frontend-dev:aa513e2",
-          "detail": "started frontend-dev:aa513e2",
-          "sourceKey": "session-start:aa513e2fec069e2bd"
+          "id": "session-stop:aeddee9125f6e2a34:2026-04-13T17:30:21.517Z",
+          "at": "2026-04-13T17:30:21.517Z",
+          "kind": "completion",
+          "agent": "react-dev:aeddee9",
+          "detail": "completed",
+          "sourceKey": "session-stop:aeddee9125f6e2a34"
         },
         {
-          "id": "session-start:aa2cf06bca4b3b6b5:2026-04-13T17:14:58.779Z",
-          "at": "2026-04-13T17:14:58.779Z",
+          "id": "session-start:ac6c38fddc5cad95f:2026-04-13T17:30:21.707Z",
+          "at": "2026-04-13T17:30:21.707Z",
           "kind": "update",
-          "agent": "react-dev:aa2cf06",
-          "detail": "started react-dev:aa2cf06",
-          "sourceKey": "session-start:aa2cf06bca4b3b6b5"
+          "agent": "react-dev:ac6c38f",
+          "detail": "started react-dev:ac6c38f",
+          "sourceKey": "session-start:ac6c38fddc5cad95f"
         }
       ]
     }

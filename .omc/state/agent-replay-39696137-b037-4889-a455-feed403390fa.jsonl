@@ -23,3 +23,11 @@
 {"t":0,"agent":"a25d346","agent_type":"backend-dev","event":"agent_start","parent_mode":"team"}
 {"t":0,"agent":"aa513e2","agent_type":"frontend-dev","event":"agent_start","parent_mode":"team"}
 {"t":0,"agent":"aa2cf06","agent_type":"react-dev","event":"agent_start","parent_mode":"team"}
+{"t":0,"agent":"aa2cf06","agent_type":"react-dev","event":"agent_stop","success":true,"duration_ms":877628}
+{"t":0,"agent":"acf9a05","agent_type":"react-dev","event":"agent_start","parent_mode":"team"}
+{"t":0,"agent":"acf9a05","agent_type":"react-dev","event":"agent_stop","success":true,"duration_ms":15794}
+{"t":0,"agent":"abde0e0","agent_type":"react-dev","event":"agent_start","parent_mode":"team"}
+{"t":0,"agent":"abde0e0","agent_type":"react-dev","event":"agent_stop","success":true,"duration_ms":12311}
+{"t":0,"agent":"aeddee9","agent_type":"react-dev","event":"agent_start","parent_mode":"team"}
+{"t":0,"agent":"aeddee9","agent_type":"react-dev","event":"agent_stop","success":true,"duration_ms":16410}
+{"t":0,"agent":"ac6c38f","agent_type":"react-dev","event":"agent_start","parent_mode":"team"}
