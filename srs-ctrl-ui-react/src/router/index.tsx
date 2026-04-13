@@ -2,6 +2,11 @@ import { createBrowserRouter, Navigate } from 'react-router-dom'
 import BasicLayout from '@/views/layout/BasicLayout'
 import Login from '@/views/user/Login'
 import Dashboard from '@/views/Dashboard'
+import UserList from '@/views/system/users/UserList'
+import RoleList from '@/views/system/roles/RoleList'
+import DepartmentList from '@/views/system/department/DepartmentList'
+import PermissionList from '@/views/system/permission/PermissionList'
+import DictList from '@/views/system/dict/DictList'
 
 export const router = createBrowserRouter([
   {
@@ -14,16 +19,11 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <Navigate to="/dashboard" replace /> },
       { path: 'dashboard', element: <Dashboard /> },
-      {
-        path: 'system',
-        children: [
-          { path: 'users', element: <div>用户管理</div> },
-          { path: 'roles', element: <div>角色管理</div> },
-          { path: 'department', element: <div>部门管理</div> },
-          { path: 'permission', element: <div>权限管理</div> },
-          { path: 'dict', element: <div>字典管理</div> },
-        ],
-      },
+      { path: 'system/users', element: <UserList /> },
+      { path: 'system/roles', element: <RoleList /> },
+      { path: 'system/department', element: <DepartmentList /> },
+      { path: 'system/permission', element: <PermissionList /> },
+      { path: 'system/dict', element: <DictList /> },
     ],
   },
 ])

@@ -137,3 +137,22 @@ body {
   font-weight: bold;
   color: var(--color-primary);
 }
+
+/* System Management Pages */
+.user-list,
+.role-list,
+.department-list,
+.permission-list,
+.dict-list {
+  .search-form {
+    margin-bottom: 16px;
+    padding: 16px;
+    background: #fafafa;
+    border-radius: var(--border-radius);
+  }
+
+  .data-table {
+    background: #fff;
+    border-radius: var(--border-radius);
+  }
+}
