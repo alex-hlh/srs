@@ -1,0 +1,237 @@
+{
+  "updatedAt": "2026-04-13T17:14:58.779Z",
+  "missions": [
+    {
+      "id": "session:39696137-b037-4889-a455-feed403390fa:none",
+      "source": "session",
+      "name": "none",
+      "objective": "Session mission",
+      "createdAt": "2026-04-13T16:57:44.103Z",
+      "updatedAt": "2026-04-13T17:06:09.668Z",
+      "status": "running",
+      "workerCount": 2,
+      "taskCounts": {
+        "total": 2,
+        "pending": 0,
+        "blocked": 0,
+        "inProgress": 1,
+        "completed": 1,
+        "failed": 0
+      },
+      "agents": [
+        {
+          "name": "frontend-dev:abdbd77",
+          "role": "frontend-dev",
+          "ownership": "abdbd77d6bf3a0c44",
+          "status": "done",
+          "currentStep": null,
+          "latestUpdate": "completed",
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:06:09.668Z"
+        },
+        {
+          "name": "backend-dev:a0e7997",
+          "role": "backend-dev",
+          "ownership": "a0e7997ba349c286e",
+          "status": "running",
+          "currentStep": null,
+          "latestUpdate": null,
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T16:57:44.153Z"
+        }
+      ],
+      "timeline": [
+        {
+          "id": "session-start:abdbd77d6bf3a0c44:2026-04-13T16:57:44.103Z",
+          "at": "2026-04-13T16:57:44.103Z",
+          "kind": "update",
+          "agent": "frontend-dev:abdbd77",
+          "detail": "started frontend-dev:abdbd77",
+          "sourceKey": "session-start:abdbd77d6bf3a0c44"
+        },
+        {
+          "id": "session-start:a0e7997ba349c286e:2026-04-13T16:57:44.153Z",
+          "at": "2026-04-13T16:57:44.153Z",
+          "kind": "update",
+          "agent": "backend-dev:a0e7997",
+          "detail": "started backend-dev:a0e7997",
+          "sourceKey": "session-start:a0e7997ba349c286e"
+        },
+        {
+          "id": "session-stop:abdbd77d6bf3a0c44:2026-04-13T17:06:09.668Z",
+          "at": "2026-04-13T17:06:09.668Z",
+          "kind": "completion",
+          "agent": "frontend-dev:abdbd77",
+          "detail": "completed",
+          "sourceKey": "session-stop:abdbd77d6bf3a0c44"
+        }
+      ]
+    },
+    {
+      "id": "session:39696137-b037-4889-a455-feed403390fa:team",
+      "source": "session",
+      "name": "team",
+      "objective": "Session mission",
+      "createdAt": "2026-04-13T17:06:09.870Z",
+      "updatedAt": "2026-04-13T17:14:58.779Z",
+      "status": "running",
+      "workerCount": 12,
+      "taskCounts": {
+        "total": 12,
+        "pending": 0,
+        "blocked": 0,
+        "inProgress": 3,
+        "completed": 9,
+        "failed": 0
+      },
+      "agents": [
+        {
+          "name": "frontend-dev:a78d33b",
+          "role": "frontend-dev",
+          "ownership": "a78d33b41e6a9e11a",
+          "status": "done",
+          "currentStep": null,
+          "latestUpdate": "completed",
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:11:21.076Z"
+        },
+        {
+          "name": "frontend-dev:a262224",
+          "role": "frontend-dev",
+          "ownership": "a26222495365b8bc0",
+          "status": "done",
+          "currentStep": null,
+          "latestUpdate": "completed",
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:06:44.350Z"
+        },
+        {
+          "name": "frontend-dev:a1da2c8",
+          "role": "frontend-dev",
+          "ownership": "a1da2c83bb0ebbfe0",
+          "status": "done",
+          "currentStep": null,
+          "latestUpdate": "completed",
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:07:04.464Z"
+        },
+        {
+          "name": "backend-dev:ae75b61",
+          "role": "backend-dev",
+          "ownership": "ae75b61a625cff4a4",
+          "status": "done",
+          "currentStep": null,
+          "latestUpdate": "completed",
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:11:44.177Z"
+        },
+        {
+          "name": "backend-dev:a28d573",
+          "role": "backend-dev",
+          "ownership": "a28d573bc8d4d8514",
+          "status": "done",
+          "currentStep": null,
+          "latestUpdate": "completed",
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:12:15.531Z"
+        },
+        {
+          "name": "backend-dev:acebd84",
+          "role": "backend-dev",
+          "ownership": "acebd84305c039c87",
+          "status": "done",
+          "currentStep": null,
+          "latestUpdate": "completed",
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:12:23.211Z"
+        },
+        {
+          "name": "backend-dev:a6b464b",
+          "role": "backend-dev",
+          "ownership": "a6b464b8924089bd1",
+          "status": "done",
+          "currentStep": null,
+          "latestUpdate": "completed",
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:12:35.896Z"
+        },
+        {
+          "name": "backend-dev:a21fb68",
+          "role": "backend-dev",
+          "ownership": "a21fb683c2164cd3b",
+          "status": "done",
+          "currentStep": null,
+          "latestUpdate": "completed",
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:12:47.305Z"
+        },
+        {
+          "name": "backend-dev:afd0a70",
+          "role": "backend-dev",
+          "ownership": "afd0a702fe46f8fff",
+          "status": "done",
+          "currentStep": null,
+          "latestUpdate": "completed",
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:13:00.308Z"
+        },
+        {
+          "name": "backend-dev:a25d346",
+          "role": "backend-dev",
+          "ownership": "a25d34693d3b1deb5",
+          "status": "running",
+          "currentStep": null,
+          "latestUpdate": null,
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:13:22.317Z"
+        },
+        {
+          "name": "frontend-dev:aa513e2",
+          "role": "frontend-dev",
+          "ownership": "aa513e2fec069e2bd",
+          "status": "running",
+          "currentStep": null,
+          "latestUpdate": null,
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:13:22.803Z"
+        },
+        {
+          "name": "react-dev:aa2cf06",
+          "role": "react-dev",
+          "ownership": "aa2cf06bca4b3b6b5",
+          "status": "running",
+          "currentStep": null,
+          "latestUpdate": null,
+          "completedSummary": null,
+          "updatedAt": "2026-04-13T17:14:58.779Z"
+        }
+      ],
+      "timeline": [
+        {
+          "id": "session-start:a25d34693d3b1deb5:2026-04-13T17:13:22.317Z",
+          "at": "2026-04-13T17:13:22.317Z",
+          "kind": "update",
+          "agent": "backend-dev:a25d346",
+          "detail": "started backend-dev:a25d346",
+          "sourceKey": "session-start:a25d34693d3b1deb5"
+        },
+        {
+          "id": "session-start:aa513e2fec069e2bd:2026-04-13T17:13:22.803Z",
+          "at": "2026-04-13T17:13:22.803Z",
+          "kind": "update",
+          "agent": "frontend-dev:aa513e2",
+          "detail": "started frontend-dev:aa513e2",
+          "sourceKey": "session-start:aa513e2fec069e2bd"
+        },
+        {
+          "id": "session-start:aa2cf06bca4b3b6b5:2026-04-13T17:14:58.779Z",
+          "at": "2026-04-13T17:14:58.779Z",
+          "kind": "update",
+          "agent": "react-dev:aa2cf06",
+          "detail": "started react-dev:aa2cf06",
+          "sourceKey": "session-start:aa2cf06bca4b3b6b5"
+        }
+      ]
+    }
+  ]
+}

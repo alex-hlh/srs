@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd /Users/hulihua/workspace/srs/srs-ctrl-ui-react && npm run type-check 2>&1\",\"timeout\":60000,\"description\":\"Type check the React project\"}",
+  "error": "Exit code 2\n\n> srs-ctrl-ui-react@1.0.0 type-check\n> tsc --noEmit\n\nsrc/hooks/useAuth.ts(1,20): error TS6133: 'useEffect' is declared but its value is never read.\nsrc/views/user/Login.tsx(3,37): error TS6133: 'Checkbox' is declared but its value is never read.\nsrc/views/user/Login.tsx(4,38): error TS6133: 'SafetyOutlined' is declared but its value is never read.\nsrc/views/user/Login.tsx(8,1): error TS6133: 'axios' is declared but its value is never read.\nsrc/views/user/Login.tsx(15,10): error TS61...",
+  "timestamp": "2026-04-13T17:24:13.091Z",
+  "retry_count": 1
+}

@@ -1,0 +1,139 @@
+:root {
+  --color-primary: #1890ff;
+  --color-success: #52c41a;
+  --color-warning: #faad14;
+  --color-error: #ff4d4f;
+  --color-text: #262626;
+  --color-text-secondary: #8c8c8c;
+  --color-bg: #ffffff;
+  --color-bg-layout: #f0f2f5;
+  --border-radius: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-text);
+  background: var(--color-bg-layout);
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Layout Styles */
+.basic-layout {
+  width: 100%;
+  height: 100%;
+}
+
+.layout-sider {
+  background: #001529 !important;
+}
+
+.layout-sider .logo {
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.layout-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: #fff !important;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+}
+
+.layout-content {
+  margin: 16px;
+  padding: 24px;
+  background: #fff;
+  min-height: 280px;
+}
+
+/* Login Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.login-card {
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+}
+
+.login-card .ant-card-body {
+  padding: 32px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-header h1 {
+  font-size: 28px;
+  color: #1890ff;
+  margin-bottom: 8px;
+}
+
+.login-header p {
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+/* Header Content */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 !important;
+}
+
+.header-left .trigger {
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0 16px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  cursor: pointer;
+  padding: 0 12px;
+}
+
+.username {
+  margin-left: 8px;
+}
+
+/* Dashboard */
+.dashboard .stat-number {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--color-primary);
+}

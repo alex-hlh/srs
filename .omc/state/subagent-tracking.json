@@ -1,0 +1,128 @@
+{
+  "agents": [
+    {
+      "agent_id": "abdbd77d6bf3a0c44",
+      "agent_type": "frontend-dev",
+      "started_at": "2026-04-13T16:57:44.103Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-04-13T17:06:09.668Z",
+      "duration_ms": 505565
+    },
+    {
+      "agent_id": "a0e7997ba349c286e",
+      "agent_type": "backend-dev",
+      "started_at": "2026-04-13T16:57:44.153Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-04-13T17:11:21.076Z",
+      "duration_ms": 816923
+    },
+    {
+      "agent_id": "a78d33b41e6a9e11a",
+      "agent_type": "frontend-dev",
+      "started_at": "2026-04-13T17:06:09.870Z",
+      "parent_mode": "team",
+      "status": "completed",
+      "completed_at": "2026-04-13T17:06:28.353Z",
+      "duration_ms": 18483
+    },
+    {
+      "agent_id": "a26222495365b8bc0",
+      "agent_type": "frontend-dev",
+      "started_at": "2026-04-13T17:06:28.551Z",
+      "parent_mode": "team",
+      "status": "completed",
+      "completed_at": "2026-04-13T17:06:44.350Z",
+      "duration_ms": 15799
+    },
+    {
+      "agent_id": "a1da2c83bb0ebbfe0",
+      "agent_type": "frontend-dev",
+      "started_at": "2026-04-13T17:06:44.561Z",
+      "parent_mode": "team",
+      "status": "completed",
+      "completed_at": "2026-04-13T17:07:04.464Z",
+      "duration_ms": 19903
+    },
+    {
+      "agent_id": "ae75b61a625cff4a4",
+      "agent_type": "backend-dev",
+      "started_at": "2026-04-13T17:11:21.274Z",
+      "parent_mode": "team",
+      "status": "completed",
+      "completed_at": "2026-04-13T17:11:44.177Z",
+      "duration_ms": 22903
+    },
+    {
+      "agent_id": "a28d573bc8d4d8514",
+      "agent_type": "backend-dev",
+      "started_at": "2026-04-13T17:11:44.374Z",
+      "parent_mode": "team",
+      "status": "completed",
+      "completed_at": "2026-04-13T17:12:15.531Z",
+      "duration_ms": 31157
+    },
+    {
+      "agent_id": "acebd84305c039c87",
+      "agent_type": "backend-dev",
+      "started_at": "2026-04-13T17:12:15.725Z",
+      "parent_mode": "team",
+      "status": "completed",
+      "completed_at": "2026-04-13T17:12:23.211Z",
+      "duration_ms": 7486
+    },
+    {
+      "agent_id": "a6b464b8924089bd1",
+      "agent_type": "backend-dev",
+      "started_at": "2026-04-13T17:12:23.415Z",
+      "parent_mode": "team",
+      "status": "completed",
+      "completed_at": "2026-04-13T17:12:35.896Z",
+      "duration_ms": 12481
+    },
+    {
+      "agent_id": "a21fb683c2164cd3b",
+      "agent_type": "backend-dev",
+      "started_at": "2026-04-13T17:12:36.087Z",
+      "parent_mode": "team",
+      "status": "completed",
+      "completed_at": "2026-04-13T17:12:47.305Z",
+      "duration_ms": 11218
+    },
+    {
+      "agent_id": "afd0a702fe46f8fff",
+      "agent_type": "backend-dev",
+      "started_at": "2026-04-13T17:12:47.496Z",
+      "parent_mode": "team",
+      "status": "completed",
+      "completed_at": "2026-04-13T17:13:00.308Z",
+      "duration_ms": 12812
+    },
+    {
+      "agent_id": "a25d34693d3b1deb5",
+      "agent_type": "backend-dev",
+      "started_at": "2026-04-13T17:13:22.317Z",
+      "parent_mode": "team",
+      "status": "running"
+    },
+    {
+      "agent_id": "aa513e2fec069e2bd",
+      "agent_type": "frontend-dev",
+      "started_at": "2026-04-13T17:13:22.803Z",
+      "parent_mode": "team",
+      "status": "running"
+    },
+    {
+      "agent_id": "aa2cf06bca4b3b6b5",
+      "agent_type": "react-dev",
+      "started_at": "2026-04-13T17:14:58.779Z",
+      "parent_mode": "team",
+      "status": "running"
+    }
+  ],
+  "total_spawned": 13,
+  "total_completed": 11,
+  "total_failed": 0,
+  "last_updated": "2026-04-13T17:14:58.914Z"
+}

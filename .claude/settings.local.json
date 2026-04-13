@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh --version)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(gh auth:*)",
+      "Bash(gh repo:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit --amend -m ':*)",
+      "Bash(git push:*)",
+      "Bash(git remote:*)",
+      "Bash(ssh -T git@github.com)",
+      "mcp__plugin_oh-my-claudecode_t__state_write",
+      "Bash(git reset:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
