@@ -36,8 +36,8 @@
 
 | 文档名称 | 说明 |
 |----------|------|
-| [ft-platform/依赖升级方案](./ft-platform/依赖升级方案.md) | JDK 17/Spring Boot 3.x 升级 |
-| [ft-ctrl-ui/React迁移方案](./ft-ctrl-ui/React迁移方案.md) | Vue 2 → React 18 迁移 |
+| [srs-platform/依赖升级方案](./依赖升级方案.md) | JDK 17/Spring Boot 3.x 升级 |
+| [srs-ui/React迁移方案](./React迁移方案.md) | Vue 2 → React 18 迁移 |
 
 ---
 
@@ -64,19 +64,19 @@
 - [ ] 验证表创建成功
 
 ### 后端启动 (0.5天)
-- [ ] 导入 ft-platform 到 IDEA
+- [ ] 导入 srs-platform 到 IDEA
 - [ ] 修改 application-dev.yml 配置
 - [ ] 编译项目 `mvn clean install`
-- [ ] 启动 ft-center
-- [ ] 启动 ft-ctrl
-- [ ] 启动 ft-gateway
+- [ ] 启动 srs-center
+- [ ] 启动 srs-ctrl
+- [ ] 启动 srs-gateway
 - [ ] 验证接口可用
 
 ### 前端启动 (0.5天)
-- [ ] 进入 ft-ctrl-ui 目录
+- [ ] 进入 srs-ui 目录
 - [ ] 执行 `yarn install`
 - [ ] 修改 .env.development 配置
-- [ ] 启动 `yarn serve`
+- [ ] 启动 `yarn dev`
 - [ ] 访问 http://localhost:3000
 - [ ] 验证登录功能
 
@@ -109,13 +109,12 @@ MinIO: 8.0.3
 
 ### 前端
 ```
-Vue: 2.6.10
-Ant Design Vue: 1.7.2
-Vuex: 3.1.0
-Vue Router: 3.0.7
-axios: 0.18.0
-vxe-table: 2.9.13
-@antv/x6: 1.28.1
+React: 18.x
+TypeScript: 5.x
+Vite: 5.x
+Ant Design: 5.x
+React Router: 6.x
+Zustand: 4.x
 ```
 
 ---
@@ -145,25 +144,29 @@ vxe-table: 2.9.13
 ## 项目结构
 
 ```
-ft/
-├── ft-platform/                  # Java 后端 (Spring Boot)
-│   ├── ft-center/              # 统一认证中心
-│   ├── ft-ctrl/                # 智能管控平台
-│   ├── ft-gateway/             # 安全网关
-│   ├── ft-doc-center/         # 文档中心
-│   ├── common/                # 公共模块
-│   └── pom.xml                # Maven 配置
+srs/
+├── srs-platform/                # Java 后端 (Spring Boot)
+│   ├── srs-center/           # 统一认证中心
+│   ├── srs-ctrl/             # 智能管控平台
+│   ├── srs-gateway/          # 安全网关
+│   ├── srs-doc-center/      # 文档中心
+│   ├── srs-meeting/         # 视频会议
+│   ├── common/               # 公共模块
+│   │   ├── base/            # 基础框架
+│   │   ├── component/       # 公共组件
+│   │   └── utils/          # 工具类
+│   └── pom.xml              # Maven 配置
 │
-├── ft-ctrl-ui/                 # Vue 前端
+├── srs-ui/                    # React 前端
 │   ├── src/
-│   │   ├── api/              # API 接口
-│   │   ├── components/       # 公共组件
-│   │   ├── views/           # 页面视图
-│   │   ├── router/          # 路由配置
-│   │   ├── store/           # Vuex 状态
-│   │   └── utils/           # 工具函数
+│   │   ├── api/             # API 接口
+│   │   ├── components/      # 公共组件
+│   │   ├── pages/          # 页面
+│   │   ├── routes/          # 路由配置
+│   │   ├── store/          # Zustand 状态
+│   │   └── utils/          # 工具函数
 │   ├── package.json
-│   └── vue.config.js
+│   └── vite.config.js
 │
 ├── 01-环境搭建指南.md          # 环境配置
 ├── 02-部署架构文档.md         # 部署方案
@@ -174,6 +177,7 @@ ft/
 ├── 07-测试规范文档.md          # 测试规范
 ├── 08-运维手册.md              # 运维指南
 ├── 09-开发规范文档.md          # 代码规范
+├── 10-分阶段实施方案.md        # 实施计划
 ├── init_mysql.sql             # 数据库脚本
 ├── 数据库设计文档.md           # 数据库设计
 ├── 功能清单文档.md             # 功能说明

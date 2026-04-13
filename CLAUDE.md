@@ -45,13 +45,12 @@ mvn -pl srs-center -am clean compile    # Build specific module
 cd srs-ctrl && mvn spring-boot:run     # Run module
 ```
 
-### Frontend (srs-ctrl-ui)
+### Frontend (srs-ui)
 ```bash
-cd srs-ctrl-ui
+cd srs-ui
 yarn install                            # Install dependencies
-yarn serve                              # Development server (port 3000)
+yarn dev                                # Development server (port 3000)
 yarn build                              # Production build
-yarn build:test                         # Test build
 ```
 
 ### Database
@@ -72,11 +71,11 @@ mysql -u root -p srs_db < init_mysql.sql
 - **srs-meeting** (8084) - Video conferencing
 - **common/** - Shared modules: base, component (Redis/MinIO/ES/RocketMQ), utils
 
-### Frontend (Vue 2.6)
-- **Vue 2.6** + Ant Design Vue 1.7.2 + Vuex 3.1.0
-- **vxe-table** for editable data grids
-- **@antv/x6** for flowcharts
-- Dynamic routing with permission control (v-permission directive)
+### Frontend (React 18)
+- **React 18** + TypeScript + Vite
+- **Ant Design 5.x** + React Router 6
+- **Zustand** for state management
+- **@tanstack/react-query** for server state
 
 ### Data Layer
 - Multi-database support: MySQL 8.0 / DAMENG / Oracle / PostgreSQL
@@ -99,7 +98,7 @@ mysql -u root -p srs_db < init_mysql.sql
 | Task | Command |
 |------|---------|
 | Start backend | `mvn spring-boot:run` in srs-ctrl module |
-| Start frontend | `yarn serve` in srs-ctrl-ui |
+| Start frontend | `yarn dev` in srs-ui |
 | Run SQL | `mysql -u root -p srs_db < init_mysql.sql` |
 | Check port | `lsof -i :3000` or `lsof -i :8082` |
 
