@@ -24,57 +24,60 @@
     </modules>
 
     <properties>
-        <java.version>1.8</java.version>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <java.version>21</java.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- Spring Boot -->
-        <spring-boot.version>2.5.4</spring-boot.version>
+        <spring-boot.version>3.2.3</spring-boot.version>
+
+        <!-- Spring Cloud -->
+        <spring-cloud.version>2023.0.0</spring-cloud.version>
 
         <!-- Database -->
-        <mybatis-plus.version>3.5.2</mybatis-plus.version>
-        <druid.version>1.2.5</druid.version>
-        <dynamic-datasource.version>3.2.0</dynamic-datasource.version>
+        <mybatis-plus.version>3.5.5</mybatis-plus.version>
+        <druid.version>1.2.21</druid.version>
+        <dynamic-datasource.version>4.3.1</dynamic-datasource.version>
 
         <!-- Redis -->
-        <jedis.version>4.2.0</jedis.version>
-        <redisson.version>3.13.6</redisson.version>
-        <commons-pool2.version>2.11.1</commons-pool2.version>
+        <jedis.version>5.1.0</jedis.version>
+        <redisson.version>3.27.2</redisson.version>
+        <commons-pool2.version>3.3.3</commons-pool2.version>
 
         <!-- MQ -->
-        <rocketmq.version>4.9.1</rocketmq.version>
+        <rocketmq.version>5.2.0</rocketmq.version>
 
         <!-- Search & Storage -->
-        <elasticsearch.version>7.17.6</elasticsearch.version>
-        <minio.version>8.0.3</minio.version>
+        <elasticsearch.version>8.12.2</elasticsearch.version>
+        <minio.version>8.5.9</minio.version>
 
         <!-- Security -->
-        <bouncycastle.version>1.70</bouncycastle.version>
+        <bouncycastle.version>1.77</bouncycastle.version>
 
         <!-- Utils -->
-        <hutool.version>5.3.8</hutool.version>
-        <guava.version>29.0-jre</guava.version>
-        <fastjson.version>1.2.79</fastjson.version>
-        <commons-io.version>2.11.0</commons-io.version>
+        <hutool.version>5.8.25</hutool.version>
+        <guava.version>33.1.0-jre</guava.version>
+        <fastjson2.version>2.0.47</fastjson2.version>
+        <commons-io.version>2.16.1</commons-io.version>
         <commons-beanutils.version>1.9.4</commons-beanutils.version>
-        <okhttp.version>4.9.1</okhttp.version>
-        <httpclient.version>4.5.13</httpclient.version>
-        <lombok.version>1.18.20</lombok.version>
+        <okhttp.version>4.12.0</okhttp.version>
+        <httpclient.version>4.5.14</httpclient.version>
+        <lombok.version>1.18.30</lombok.version>
 
         <!-- API Doc -->
-        <knife4j.version>2.0.4</knife4j.version>
+        <knife4j.version>4.3.0</knife4j.version>
 
         <!-- Log -->
-        <slf4j.version>1.7.36</slf4j.version>
-        <log4j2.version>2.18.0</log4j2.version>
+        <slf4j.version>2.0.13</slf4j.version>
+        <log4j2.version>2.23.1</log4j2.version>
         <disruptor.version>3.4.4</disruptor.version>
 
         <!-- Network -->
-        <netty.version>4.1.86.Final</netty.version>
-        <websocket.version>1.5.2</websocket.version>
-        <servlet.version>4.0.1</servlet.version>
+        <netty.version>4.1.107.Final</netty.version>
+        <websocket.version>1.5.6</websocket.version>
+        <servlet.version>6.0.0</servlet.version>
     </properties>
 
     <dependencyManagement>
@@ -84,6 +87,15 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Spring Cloud Dependencies -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -181,9 +193,9 @@
                 <version>${guava.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>${fastjson.version}</version>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson2.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-io</groupId>

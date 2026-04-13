@@ -36,7 +36,7 @@
 
 | 文档名称 | 说明 |
 |----------|------|
-| [srs-platform/依赖升级方案](./依赖升级方案.md) | JDK 17/Spring Boot 3.x 升级 |
+| [srs-platform/依赖升级方案](./依赖升级方案.md) | JDK 21/Spring Boot 3.x 升级 |
 | [srs-ui/React迁移方案](./React迁移方案.md) | Vue 2 → React 18 迁移 |
 
 ---
@@ -44,7 +44,7 @@
 ## 项目复刻清单
 
 ### 环境准备 (1-2天)
-- [ ] 安装 JDK 17
+- [ ] 安装 JDK 21
 - [ ] 安装 Maven 3.8+
 - [ ] 安装 Node.js 18
 - [ ] 安装 Docker Desktop
@@ -98,7 +98,7 @@
 ### 后端
 ```
 Spring Boot: 2.5.4 → 3.2.x (计划)
-JDK: 8 → 17/21
+JDK: 8 → 21
 MyBatis-Plus: 3.5.2
 Druid: 1.2.5
 Redis: 6.x / 7.x
