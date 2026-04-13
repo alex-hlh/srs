@@ -1,143 +1,35 @@
-# 星环空间 - 项目文档索引
+# 星环空间 (Stellar Ring Space, SRS)
 
-> 本文档是星环空间 (Stellar Ring Space, SRS) 的项目文档索引，提供完整的文档导航。
-
----
-
-## 文档清单
-
-| 编号 | 文档名称 | 说明 | 优先级 |
-|------|----------|------|--------|
-| [01-环境搭建指南](./01-环境搭建指南.md) | 开发环境配置 | JDK/Maven/Node/中间件安装 | P0 |
-| [02-部署架构文档](./02-部署架构文档.md) | Docker 部署 | docker-compose/容器编排 | P0 |
-| [03-API接口规范](./03-API接口规范.md) | 接口定义 | 认证流程/接口清单 | P0 |
-| [04-配置文件模板](./04-配置文件模板.md) | 配置示例 | application.yml/vue.config.js | P0 |
-| [05-系统架构文档](./05-系统架构文档.md) | 架构设计 | 模块关系/部署架构 | P1 |
-| [06-安全设计文档](./06-安全设计文档.md) | 安全方案 | 认证授权/加密/RBAC | P1 |
-| [07-测试规范文档](./07-测试规范文档.md) | 测试要求 | 单元/集成/E2E测试 | P1 |
-| [08-运维手册](./08-运维手册.md) | 运维指南 | 监控/告警/故障处理 | P1 |
-| [09-开发规范文档](./09-开发规范文档.md) | 代码规范 | Java/Vue/SQL/Git规范 | P2 |
-| [10-分阶段实施方案](./10-分阶段实施方案.md) | 实施计划 | 环境搭建/后端/前端/部署 | P0 |
+企业级 SaaS 办公系统，采用微服务架构。
 
 ---
 
-## 业务文档
-
-| 文档名称 | 说明 |
-|----------|------|
-| [数据库设计文档](./数据库设计文档.md) | ER图/表结构/索引设计 |
-| [功能清单文档](./功能清单文档.md) | 功能模块/页面清单 |
-| [UI设计文档](./UI设计文档.md) | 页面布局/组件设计 |
-| [复刻技术栈文档](./复刻技术栈文档.md) | 完整技术栈参考 |
-
----
-
-## 技术方案
-
-| 文档名称 | 说明 |
-|----------|------|
-| [srs-platform/依赖升级方案](./依赖升级方案.md) | JDK 21/Spring Boot 3.x 升级 |
-| [srs-ui/React迁移方案](./React迁移方案.md) | Vue 2 → React 18 迁移 |
-
----
-
-## 项目复刻清单
-
-### 环境准备 (1-2天)
-- [ ] 安装 JDK 21
-- [ ] 安装 Maven 3.8+
-- [ ] 安装 Node.js 18
-- [ ] 安装 Docker Desktop
-- [ ] 克隆代码仓库
-
-### 中间件搭建 (1天)
-- [ ] 启动 MySQL 8.0
-- [ ] 启动 Redis 7.x
-- [ ] 启动 Nacos 2.x
-- [ ] 启动 RocketMQ 4.9.x
-- [ ] 启动 Elasticsearch 7.17.x
-- [ ] 启动 MinIO
-
-### 数据库初始化 (0.5天)
-- [ ] 创建数据库 `xx_ft`
-- [ ] 执行 init_mysql.sql
-- [ ] 验证表创建成功
-
-### 后端启动 (0.5天)
-- [ ] 导入 srs-platform 到 IDEA
-- [ ] 修改 application-dev.yml 配置
-- [ ] 编译项目 `mvn clean install`
-- [ ] 启动 srs-center
-- [ ] 启动 srs-ctrl
-- [ ] 启动 srs-gateway
-- [ ] 验证接口可用
-
-### 前端启动 (0.5天)
-- [ ] 进入 srs-ui 目录
-- [ ] 执行 `yarn install`
-- [ ] 修改 .env.development 配置
-- [ ] 启动 `yarn dev`
-- [ ] 访问 http://localhost:3000
-- [ ] 验证登录功能
-
-### 功能验证 (1-2天)
-- [ ] 管理员登录
-- [ ] 用户管理 CRUD
-- [ ] 角色管理 CRUD
-- [ ] 权限管理
-- [ ] 部门管理
-- [ ] 字典管理
-- [ ] 应用管理
-- [ ] 服务管理
-- [ ] 文档上传下载
-
----
-
-## 技术栈速查
+## 技术栈
 
 ### 后端
-```
-Spring Boot: 2.5.4 → 3.2.x (计划)
-JDK: 8 → 21
-MyBatis-Plus: 3.5.2
-Druid: 1.2.5
-Redis: 6.x / 7.x
-RocketMQ: 4.9.x
-Elasticsearch: 7.17.6
-MinIO: 8.0.3
-```
+
+| 组件 | 版本 |
+|------|------|
+| JDK | 21 |
+| Spring Boot | 3.2.3 |
+| Spring Cloud | 2023.0.0 |
+| MyBatis-Plus | 3.5.5 |
+| Druid | 1.2.21 |
+| Redis | 6.x / 7.x |
+| RocketMQ | 5.2.0 |
+| Elasticsearch | 8.12.2 |
+| MinIO | 8.5.9 |
 
 ### 前端
-```
-React: 18.x
-TypeScript: 5.x
-Vite: 5.x
-Ant Design: 5.x
-React Router: 6.x
-Zustand: 4.x
-```
 
----
-
-## 快速链接
-
-- [init_mysql.sql](./init_mysql.sql) - 数据库初始化脚本
-- [数据库设计文档](./数据库设计文档.md) - 表结构设计
-- [功能清单文档](./功能清单文档.md) - 功能模块说明
-- [UI设计文档](./UI设计文档.md) - 页面布局设计
-
----
-
-## 问题排查
-
-| 问题 | 解决方案 |
-|------|----------|
-| Maven 下载依赖慢 | 配置国内镜像 |
-| Node Sass 安装失败 | 配置淘宝镜像 |
-| 端口被占用 | `lsof -i:端口号` 查找并 kill |
-| MySQL 连接失败 | 检查用户名密码和权限 |
-| Redis 连接失败 | 检查防火墙和密码配置 |
-| 前端 API 请求失败 | 检查代理配置和后端服务 |
+| 组件 | 版本 |
+|------|------|
+| React | 18.x |
+| TypeScript | 5.x |
+| Vite | 5.x |
+| Ant Design | 5.x |
+| React Router | 6.x |
+| Zustand | 4.x |
 
 ---
 
@@ -146,44 +38,97 @@ Zustand: 4.x
 ```
 srs/
 ├── srs-platform/                # Java 后端 (Spring Boot)
-│   ├── srs-center/           # 统一认证中心
-│   ├── srs-ctrl/             # 智能管控平台
-│   ├── srs-gateway/          # 安全网关
-│   ├── srs-doc-center/      # 文档中心
-│   ├── srs-meeting/         # 视频会议
-│   ├── common/               # 公共模块
-│   │   ├── base/            # 基础框架
-│   │   ├── component/       # 公共组件
-│   │   └── utils/          # 工具类
-│   └── pom.xml              # Maven 配置
+│   ├── srs-gateway/            # 安全网关 (8080)
+│   ├── srs-center/             # 统一认证中心 (8081)
+│   ├── srs-ctrl/               # 智能管控平台 (8082)
+│   ├── srs-doc-center/         # 文档中心 (8083)
+│   ├── srs-meeting/            # 视频会议 (8084)
+│   ├── common/
+│   │   ├── base/               # 基础框架
+│   │   ├── component/          # 公共组件
+│   │   └── utils/              # 工具类
+│   └── pom.xml
 │
-├── srs-ui/                    # React 前端
+├── srs-ui/                      # React 前端
 │   ├── src/
-│   │   ├── api/             # API 接口
-│   │   ├── components/      # 公共组件
-│   │   ├── pages/          # 页面
-│   │   ├── routes/          # 路由配置
-│   │   ├── store/          # Zustand 状态
-│   │   └── utils/          # 工具函数
-│   ├── package.json
-│   └── vite.config.js
+│   │   ├── api/                # API 接口
+│   │   ├── components/         # 公共组件
+│   │   ├── pages/              # 页面
+│   │   ├── routes/             # 路由配置
+│   │   ├── store/              # Zustand 状态
+│   │   └── utils/              # 工具函数
+│   └── package.json
 │
-├── 01-环境搭建指南.md          # 环境配置
-├── 02-部署架构文档.md         # 部署方案
-├── 03-API接口规范.md          # 接口定义
-├── 04-配置文件模板.md          # 配置示例
-├── 05-系统架构文档.md          # 架构设计
-├── 06-安全设计文档.md          # 安全方案
-├── 07-测试规范文档.md          # 测试规范
-├── 08-运维手册.md              # 运维指南
-├── 09-开发规范文档.md          # 代码规范
-├── 10-分阶段实施方案.md        # 实施计划
-├── init_mysql.sql             # 数据库脚本
-├── 数据库设计文档.md           # 数据库设计
-├── 功能清单文档.md             # 功能说明
-├── UI设计文档.md               # UI 设计
-└── 复刻技术栈文档.md           # 技术栈参考
+└── init_mysql.sql               # 数据库初始化脚本
 ```
+
+---
+
+## 快速开始
+
+### 环境要求
+
+- JDK 21
+- Maven 3.8+
+- Node.js 18+
+- MySQL 8.0
+- Redis 7.x
+
+### 后端启动
+
+```bash
+cd srs-platform
+mvn clean install -DskipTests
+cd srs-gateway && mvn spring-boot:run    # 端口 8080
+cd srs-center && mvn spring-boot:run     # 端口 8081
+cd srs-ctrl && mvn spring-boot:run       # 端口 8082
+```
+
+### 前端启动
+
+```bash
+cd srs-ui
+yarn install
+yarn dev    # 端口 3000
+```
+
+### 数据库初始化
+
+```bash
+mysql -u root -p -e "CREATE DATABASE IF NOT EXISTS srs_db DEFAULT CHARACTER SET utf8mb4;"
+mysql -u root -p srs_db < init_mysql.sql
+```
+
+---
+
+## 文档索引
+
+| 编号 | 文档 | 说明 |
+|------|------|------|
+| 01 | [环境搭建指南](./01-环境搭建指南.md) | JDK/Maven/Node/中间件安装 |
+| 02 | [部署架构文档](./02-部署架构文档.md) | Docker 部署与容器编排 |
+| 03 | [API接口规范](./03-API接口规范.md) | 接口定义与认证流程 |
+| 04 | [配置文件模板](./04-配置文件模板.md) | application.yml 配置示例 |
+| 05 | [系统架构文档](./05-系统架构文档.md) | 模块关系与部署架构 |
+| 06 | [安全设计文档](./06-安全设计文档.md) | 认证授权/加密/RBAC |
+| 07 | [测试规范文档](./07-测试规范文档.md) | 单元/集成/E2E 测试 |
+| 08 | [运维手册](./08-运维手册.md) | 监控/告警/故障处理 |
+| 09 | [开发规范文档](./09-开发规范文档.md) | Java/SQL/Git 规范 |
+| - | [数据库设计文档](./数据库设计文档.md) | ER图/表结构/索引 |
+| - | [功能清单文档](./功能清单文档.md) | 功能模块清单 |
+| - | [UI设计文档](./UI设计文档.md) | 页面布局/组件设计 |
+| - | [复刻技术栈文档](./复刻技术栈文档.md) | 完整技术栈参考 |
+
+---
+
+## 主要功能
+
+- 用户管理 / 角色管理 / 权限管理
+- 部门管理 / 字典管理
+- 应用管理 / 服务管理
+- 文档上传下载
+- 统一认证 (JWT + CAS SSO)
+- RBAC 菜单/按钮级权限控制
 
 ---
 
