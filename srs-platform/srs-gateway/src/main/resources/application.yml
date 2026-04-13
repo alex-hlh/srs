@@ -1,0 +1,45 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: srs-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: srs-center
+          uri: http://localhost:8081
+          predicates:
+            - Path=/center/**
+        - id: srs-ctrl
+          uri: http://localhost:8082
+          predicates:
+            - Path=/ctrl/**
+        - id: srs-doc-center
+          uri: http://localhost:8083
+          predicates:
+            - Path=/doc/**
+        - id: srs-meeting
+          uri: http://localhost:8084
+          predicates:
+            - Path=/meeting/**
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    database: 0
+    timeout: 3000ms
+
+jwt:
+  secret: srs-secret-key-for-jwt-token-generation-must-be-at-least-512-bits
+  expiration: 86400000
+
+logging:
+  level:
+    com.srs.gateway: info
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{50} - %msg%n'
